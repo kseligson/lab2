@@ -21,66 +21,99 @@
 </head>
 
 <body>
-	<div class="container">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div class="container main-page">
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1>Michael Bernstein</h1>
-			<p>human-computer interaction &middot; social computing &middot; crowdsourcing</p>
+			<h1>Kaitlin Seligson</h1>
+			<p>Human-Computer Interaction &middot; Front-End Developer &middot; UX Designer</p>
 		</div>
 
-
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div class="project" id="project1">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Waiting in Line</p>
-			</a>
+		<div id="projects">
+			<h1>Projects</h1>
+			<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
+			<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
+			<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
+			<div class="project" id="project1">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.people.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Waiting in Line</p>
+				</a>
+			</div>
+			<div class="project" id="project2">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Needfinding</p>
+				</a>
+			</div>
+			<div class="project" id="project3">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Prototyping</p>
+				</a>
+			</div>
+			<div class="project" id="project4">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Heuristic Evaluation</p>
+				</a>
+			</div>
+			<div class="project" id="project5">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Visualization</p>
+				</a>
+			</div>
+			<div class="project" id="project6">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Social design</p>
+				</a>
+			</div>
+			<div class="project" id="project7">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Gestural interaction</p>
+				</a>
+			</div>
+			<div class="project" id="project8">
+				<a href="project.html" class="thumbnail">
+					<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
+					<p>Design tools</p>
+				</a>
+			</div>
 		</div>
-		<div class="project" id="project2">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Needfinding</p>
-			</a>
-		</div>
-		<div class="project" id="project3">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Prototyping</p>
-			</a>
-		</div>
-		<div class="project" id="project4">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.1.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Heuristic Evaluation</p>
-			</a>
-		</div>
-		<div class="project" id="project5">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.abstract.8.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Visualization</p>
-			</a>
-		</div>
-		<div class="project" id="project6">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.people.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Social design</p>
-			</a>
-		</div>
-		<div class="project" id="project7">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.technics.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Gestural interaction</p>
-			</a>
-		</div>
-		<div class="project" id="project8">
-			<a href="project.html" class="thumbnail">
-				<img src="images/lorempixel.city.2.jpeg" alt="Lorem Pixel image" class="img">
-				<p>Design tools</p>
-			</a>
+	
+		<div id="contact">
+			<h1 align="center">Contact</h1>
+				<figure align="center">
+					<img class="img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAKqAAAAJGYwNjc1NmRjLTc1M2YtNDVkNy05ZjI2LTBlZjc2MmM1OTQ3YQ.jpg"/>
+					<figcaption>Phone: 916.221.8736<br>Email: kseligso@ucsd.edu
+				</figure>
+			</div>
 		</div>
 	</div>
 

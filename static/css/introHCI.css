@@ -1,3 +1,7 @@
+
+body {
+}
+
 /* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
@@ -19,6 +23,7 @@ body {
 .jumbotron {
 	position: relative;
 	background: none;
+     text-align: center;
 }
 
 .jumbotron:after {
@@ -31,4 +36,12 @@ body {
      right: 0;
      position: absolute;
      z-index: -1;	
+}
+
+.main-page {
+     padding-top: 50px;
+}
+
+#contact img {
+     width: 25%;
 }
